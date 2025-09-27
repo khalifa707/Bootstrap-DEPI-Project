@@ -397,3 +397,170 @@ body {
         text-align: center;
     }
 }
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.newsletter-content {
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+.newsletter-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.newsletter-input {
+    padding: 15px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.newsletter-input:focus {
+    border-color: #5a67d8;
+    box-shadow: 0 0 0 0.2rem rgba(90, 103, 216, 0.25);
+}
+
+.newsletter-btn {
+    background-color: #5a67d8;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+}
+
+.newsletter-privacy {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.privacy-link {
+    color: #5a67d8;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    color: #4c51bf;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: white;
+    border-top: 1px solid #e9ecef;
+    padding: 60px 0 40px 0;
+}
+
+.footer-section .container {
+    max-width: 1200px;
+}
+
+.footer-section .row {
+    justify-content: center;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #5a67d8;
+}
+
+.contact-email a {
+    color: #5a67d8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-email a:hover {
+    color: #4c51bf;
+    text-decoration: underline;
+}
+
+.contact-phone {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-copyright {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-link {
+    color: #6c757d;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #5a67d8;
+}
+
+/* Responsive adjustments for newsletter and footer */
+@media (max-width: 991.98px) {
+    .newsletter-title {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
