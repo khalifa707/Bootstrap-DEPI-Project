@@ -183,3 +183,217 @@ body {
     opacity: 0.7;
     z-index: 1;
 }
+
+/* Fix for consistent image heights and centering */
+.location-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.location-image img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.location-content {
+    text-align: center;
+}
+
+/* Talented People Section */
+.talented-people {
+    background-color: #f8f9fa;
+}
+
+.talented-people .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.talented-people .section-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+.talented-people .bottom-image img {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.talented-people .right-image-wrapper img {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .talented-people .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .talented-people .section-description {
+        text-align: center;
+    }
+
+    .talented-people .right-image-wrapper {
+        margin-top: 2rem;
+    }
+}
+
+/* Support Section */
+.support-section {
+    background-color: #161C2D;
+    color: white;
+    padding: 100px 0 !important;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.support-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+}
+
+.support-description {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+/* Features List */
+.feature-item {
+    margin-bottom: 2rem;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+}
+
+.feature-icon i {
+    color: #27ae60;
+    font-size: 1.5rem;
+}
+
+.feature-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.feature-description {
+    color: #bdc3c7;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* FAQ Accordion Styling */
+.faq-wrapper .accordion {
+    background: transparent;
+    border-top: 4px solid #27ae60;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.faq-wrapper .accordion-item {
+    background-color: white;
+    border: none;
+    border-radius: 0 !important;
+    margin-bottom: 0;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.faq-wrapper .accordion-item:first-child .accordion-button {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.faq-wrapper .accordion-item:last-child .accordion-button {
+    border-radius: 0 0 8px 8px !important;
+}
+
+.faq-wrapper .accordion-item:last-child .accordion-collapse {
+    border-radius: 0 0 8px 8px !important;
+}
+
+.faq-wrapper .accordion-item:not(:last-child) {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.faq-wrapper .accordion-button {
+    background-color: white;
+    color: #2c3e50;
+    font-weight: 600;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 0 !important;
+    box-shadow: none;
+    font-size: 1.1rem;
+}
+
+.faq-wrapper .accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #2c3e50;
+    box-shadow: none;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.faq-wrapper .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.faq-wrapper .accordion-button::after {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.faq-wrapper .accordion-body {
+    padding: 1.5rem 2rem 2rem 2rem;
+    color: #6c757d;
+    line-height: 1.7;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
+
+.faq-wrapper .accordion-collapse {
+    border-radius: 0;
+}
+
+/* Responsive adjustments for support section */
+@media (max-width: 991.98px) {
+    .support-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .support-description {
+        text-align: center;
+    }
+
+    .faq-wrapper {
+        margin-top: 3rem;
+    }
+
+    .feature-item {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+}
